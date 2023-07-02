@@ -2,10 +2,10 @@
   "name": "code-converter",
   "version": "1.0.0",
   "description": "This appliation is basically for code converter from one language to another language",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "node index.js"
+    "server": "node server.js"
   },
   "repository": {
     "type": "git",

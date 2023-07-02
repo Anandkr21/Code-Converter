@@ -16,6 +16,9 @@ app.get("/", (req, res) => {
     res.sendFile(path.resolve(__dirname, "../", "client", "index.html"));
 })
 
+app.get('/', (req,res) =>{
+    res.send('hello')
+})
 app.post('/convert', async (req, res) => {
     try {
         const { code, language } = req.body;
