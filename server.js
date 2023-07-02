@@ -11,10 +11,10 @@ const port = process.env.PORT || 5000;
 app.use(express.json());
 app.use(cors());
 
-// app.get("/", (req, res) => {
-//     app.use(express.static(path.join(__dirname, "../", "client")));
-//     res.sendFile(path.resolve(__dirname, "../", "client", "index.html"));
-// })
+app.get("/", (req, res) => {
+    app.use(express.static(path.join(__dirname, "../", "client")));
+    res.sendFile(path.resolve(__dirname, "../", "client", "index.html"));
+})
 
 
 app.post('/convert', async (req, res) => {
